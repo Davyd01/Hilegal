@@ -1,9 +1,9 @@
-$main-color: #323264; 
+$main-color: #323264;
 $white-color: #fff;
 $alt-color: #46466E;
-$soft-color: #686887;
+$soft-color: #686886;
 
-$accent-color: #F0145A;
+$accent-color: #F8145A;
 
 $regular-color: #24A3FF;
 $regular-hover-color: #0085FF;
@@ -11,28 +11,29 @@ $regular-active-color: #006CCF;
 
 $grey-color: #F5F5FA;
 $grey-alt-color: #EDEDF7;
-$grey-color-text: #B3B3BA;
+$grey-color-text: #B3b3ba;
 $grey-separator-color: #E6E6F0;
 
-$main-gradient: linear-gradient(129deg, #323264 0%, #323264 74%, #A54B5F 100%);
-$gradient-soft: linear-gradient(42deg, #323264 15%, #323264 51%, #7A425E 88%);
+$main-gradient:  linear-gradient(129deg, #323264 0%, #323264 74%, #A54B5F 100%);
+$gradient-soft:  linear-gradient(42deg, #323264 15%, #323264 51%, #7A425E 88%);
 $gradient-red: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
-$gradient-super-soft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-$gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+$gradient-super-soft:  linear-gradient(229deg, #323264 12%, #323264 57%, #643E72 87%);
+$gradient-red-text: linear-gradient(90deg, #F0145A 0.85%, #EF8080 100%);
 
 
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
 $breakpoint-xl: 1440px;
-$breakpoint-xxl: 1920px; 
+$breakpoint-xxl: 1920px;
+
+
+$main-radis: 8px;
 
 @mixin gradient-text {
-  background: $gradient-red-text;
-  color: transparent;
-  background-clip: text;
+	background: $gradient-red-text;
+	color: transparent;
+	background-clip: text;
 }
-
-$main-radius: 8px;
 
 // сделать бг градиентом 
 // .test {
