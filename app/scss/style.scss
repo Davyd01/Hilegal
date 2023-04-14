@@ -4,4 +4,6 @@
 @import '_global';
 @import '_header';
 @import '_expirience';
-@import 'team';
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import '_team';
