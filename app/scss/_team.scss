@@ -6,10 +6,10 @@
 
 
 .team {
-  background: pink;
+  // background: pink;
   position: relative;
   padding: 70px 30px;
-  position: relative;
+  // position: relative;
   
 
   &__swiper {
@@ -31,7 +31,6 @@
   &__image {
     height: 500px;
 
-   
 
     img {
       width: 100%;
@@ -49,6 +48,28 @@
   }
 
   &__inner-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;  
+  color: $regular-color;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -13px;
+    border-right: 2px solid $regular-color;
+    border-bottom: 2px solid $regular-color;
+    // background: #000;
+    width: 9px;
+    height: 9px;
+
+    transform: rotate(316deg)
+  }
   }
 
   &__link-title {
@@ -56,9 +77,30 @@
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 30px;
+    background: $gradient-red-text;
+// -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+// text-fill-color: transparent;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: 38px;
+  line-height: 46px;
+    }
+    
   }
 
   &__inner-name {
+
+    p{
+      color: $grey-color-text;
+    }
+    p + p {
+      font-size: 14px;
+      line-height: 22px;
+      color: $grey-color-text;
+      opacity: 0.5;
+    }
   }
 
   &__pagination {

@@ -10,9 +10,20 @@
 		display: flex;
 		flex-flow: column;
 		justify-content: space-between;
+
+		@media (min-width:$breakpoint-md) {
+			padding-top: 50px;
+		}
+		
 	}
 
 	&__head {
+		@media (min-width:$breakpoint-lg) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			flex-direction: row-reverse;
+		}
 	}
 
 	&__social {
@@ -28,6 +39,11 @@
 			background: transparent;
 			justify-content: flex-start;
 			gap: 18px;
+		}
+		@media (min-width:$breakpoint-lg) {
+			// order: 2;
+			margin: 0;
+			padding: 0;
 		}
 	}
 
@@ -65,6 +81,8 @@
 		@media (min-width: $breakpoint-md) {
 			display: block;
 			color: $white-color;
+			// width: 50px;
+			// height: 50px;
 		}
 	}
 
@@ -74,23 +92,41 @@
 		align-items: center;
 		gap: 4px;
 		@media (min-width: $breakpoint-md) {
-			margin: 0;
+			margin: 0 0 30px 0;
 		}
 		span {
 			font-size: 26px;
 			line-height: 24px;
 			color: $accent-color;
+
+			@media (min-width: $breakpoint-md) {
+				display: none;
+				opacity: 0;
+			}
 		}
 
 		span + span {
 			font-size: 20px;
 			color: $white-color;
 		}
+
+		@media (min-width:$breakpoint-lg) {
+			// order: 1;
+		}
+
+		@media (min-width: $breakpoint-xl) {
+			flex: 1 1 50%;
+		}
 	}
 
 	&__logo-link {
 		width: 69px;
 		height: 32px;
+
+		@media (min-width: $breakpoint-md) {
+			width: 130px;
+			height: 60px;
+		}
 	}
 
 	&__logo-logo {
@@ -137,6 +173,8 @@
 				background: $white-color;
 			}
 		}
+
+		
 	}
 
 	&__nav {
@@ -159,6 +197,9 @@
 			transform: translate(0);
 			padding: 0;
 		}
+		@media (min-width:$breakpoint-lg) {
+			display: flex;
+		}
 	}
 
 	&__nav-close {
@@ -175,7 +216,11 @@
 	&__nav-list {
 		@media (min-width: $breakpoint-md) {
 			display: flex;
-			gap: 10px;
+			gap: 15px;
+		}
+
+		@media (min-width:$breakpoint-lg) {
+			// order: 1;
 		}
 	}
 
@@ -197,6 +242,7 @@
 			color: $white-color;
 			padding: 0;
 			background: transparent;
+			font-weight: 700;
 		}
 	}
 

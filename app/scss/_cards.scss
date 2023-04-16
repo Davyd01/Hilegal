@@ -1,0 +1,85 @@
+.cards {
+
+
+
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $regular-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  &__title {
+    background: $gradient-red-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 30px;
+  }
+
+  // &__flex-flex {
+  //   @media (min-width: $breakpoint-md) {
+  //     display: flex;
+      // flex-wrap: wrap;
+      // gap: 60px;
+      // flex: 1 1 30%;
+  //   }
+  // }
+
+  &__flex {
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      
+      gap: 60px;
+      // flex-shrink: 1;
+      // flex-grow: 1;
+      // flex-basis: 50%;
+      
+      // background: #000;
+      flex-flow: wrap;
+    }
+  }
+
+  &__card {
+    margin-bottom: 30px;
+    // background: yellow;
+    
+    
+
+    @media (min-width: $breakpoint-md) {
+      flex: 1 1 45%;
+    }
+    @media (min-width: $breakpoint-lg) {
+      flex: 1 1 28%;
+    }
+  }
+
+  &__card-icon {
+    width: 92px;
+    height: 92px;
+  }
+
+  &__card-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: $regular-color;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+
+  &__card-text {
+    line-height: 26px;
+    color: #fff;
+  }
+}
+
+
