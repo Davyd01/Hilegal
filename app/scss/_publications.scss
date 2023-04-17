@@ -1,0 +1,116 @@
+
+.publications {
+
+  background: $grey-color;
+  margin-top: 30px;
+  
+
+  &__link {
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $regular-color;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: inline-block;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__title {
+    background: $gradient-red-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 30px;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: 38px;
+      line-height: 46px;
+    }
+
+  }
+
+  &__blocks {
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__section {
+
+    background: white;
+    border-radius: 12px 12px 0px 0px;
+
+
+    @media (min-width: $breakpoint-md) {
+      flex: 1 1 45%;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      flex: 1 1 30%;
+    }
+    
+  }
+
+  &__section-image {
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+    // width: 100%;
+    // height: 100%;
+    
+    // display: block;
+
+    @media (min-width: $breakpoint-md) {
+      // min-width: 309px;
+      // min-height: 200px;
+    }
+  }
+
+  &__section-description {
+    padding: 30px;
+  }
+
+  &__section-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $regular-color;
+    margin-bottom: 15px;
+  }
+
+  &__section-date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $grey-color-text;
+    border-bottom: 4px solid $grey-separator-color;
+    padding-bottom: 15px;
+  }
+
+  &__section-text {
+    font-size: 14px;
+    line-height: 22px;  
+    color: black;
+    margin-top: 15px;
+
+  }
+}
+.container {
+}
