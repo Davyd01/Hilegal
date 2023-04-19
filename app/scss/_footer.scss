@@ -8,25 +8,33 @@
   &__main {
     border-top: 2px solid $grey-separator-color;
     padding-top: 30px;
-
+    
+    @media (min-width: $breakpoint-md) {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    flex-flow: wrap;
   }
-
-  &__main-flex {
-
-      display: flex;
-      flex-direction: column;
-      @media (min-width: $breakpoint-md) {
-      // display: flex;
-      // flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 16px;
-      flex-flow: wrap;
-    }
-  }
-
-
+}
 
   &__main-adress {
+
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      flex: 1 1 50%;
+    }
+    }
+  
+
+
+
+  &__main-street {
     
     font-size: 16px;
     line-height: 20px;
@@ -34,14 +42,13 @@
     margin-bottom: 10px;
 
     @media (min-width: $breakpoint-md) {
-      // flex: 1 1 30%;
-      // order: 1;
+      margin-bottom: 0;
     }
   }
 
   &__main-link {
     
-    display: block;
+    display: inline-block;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
@@ -49,21 +56,40 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 21px;
+    text-decoration: none;
 
     @media (min-width: $breakpoint-md) {
-      // flex: 1 1 30%;
+      margin-bottom: 0;
     }
+  }
+
+
+  &__main-social {
+
+    
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      order: 3;
+      align-items: center;
+      gap: 26px;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      flex: 1 1 100%;
+    }
+    
   }
 
   &__main-icon {
     width: 38px;
     height: 38px;
     margin-bottom: 10px;
-    display: block;
+    display: inline-block;
     fill: $regular-color;
     @media (min-width: $breakpoint-md) {
       // flex: 1 1 30%;
-      order: 5;
+      margin-bottom: 0px;
       
     }
   }
@@ -74,9 +100,10 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    text-decoration: none;
 
     @media (min-width: $breakpoint-md) {
-      flex: 1 1 30%;
+      margin-bottom: 0px;
     }
   }
 
@@ -87,7 +114,17 @@
     line-height: 20px;
     color: $regular-color;
     margin-bottom: 30px;
-    display: block;
+    display: inline-block;
+    text-decoration: none;
+
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: 0;
+    }
   }
 
   &__main-copyright {
@@ -101,6 +138,29 @@
     }
   }
 
+}
+
+
+.footer-dot {
+
+  &__item {
+    position: relative;
+    
+    &::before {
+      @media (min-width: $breakpoint-md) {
+        content: '';
+				position: absolute;
+				top: 50%;
+				left: -17px;
+				transform: translate(0, -50%);
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background: $grey-color-text;
+				pointer-events: none;
+      }
+    }
+  }
 }
 
 
