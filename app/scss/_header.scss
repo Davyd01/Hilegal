@@ -316,6 +316,11 @@
 		border: 2px solid $white-color;
 		border-radius: 50%;
 		position: relative;
+
+
+		&:hover {
+			color: $accent-color;
+		}
 		&::before {
 			content: '';
 			position: absolute;
@@ -327,6 +332,8 @@
 			border-left: 2px solid $white-color;
 			transform: rotate(-45deg);
 		}
+
+		
 	}
 }
 
