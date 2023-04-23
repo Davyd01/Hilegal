@@ -12,6 +12,33 @@ body {
 
 .wrapper {
 	background: $gradient-super-soft;
+	position: relative;
+
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		left: 20px;
+		right: 20px;
+		background: #CACADB;
+		height: 10px;
+		border-radius:0 0 10px 10px;
+	}
+
+	&::after {
+    left: 40px;
+		right: 40px;
+		bottom: -20px;
+		background: #E7E7F2;
+	}
+}
+
+.hidden {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height: 0;
 }
 
 .container {
